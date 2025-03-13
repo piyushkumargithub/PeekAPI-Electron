@@ -1,0 +1,96 @@
+.requestPanel {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #2b2b2b;
+    border-radius: 8px;
+    color: white;
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .topSection {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .methodSelect {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: white;
+  }
+  
+  .urlInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+  }
+  
+  .sendButton {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #1db954;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .tabs button {
+    padding: 10px;
+    flex: 1;
+    border: none;
+    background: #444;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px 5px 0 0; /* Rounded top corners */
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  /* Active Tab Styling */
+  .activeTab {
+    background: #1db954; /* Highlight active tab */
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 0 5px #1db954; /* Subtle glow effect */
+  }
+  
+  /* Content Section with Fixed Height */
+  .content {
+    margin-top: 10px;
+    height: 150px; /* Fixed height for both Headers and Body */
+    overflow: hidden;
+  }
+  
+  /* Fixed Size Input */
+  .inputBox {
+    padding: 10px;
+    width: 100%;
+    height: 100%; /* Takes full height of .content */
+    background: #333;
+    border-radius: 5px;
+    color: white;
+    resize: none;
+  }
+  
+  /* Make Body Scrollable */
+  .bodyInput {
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #555 #2b2b2b;
+  }
+  
