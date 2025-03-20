@@ -2,7 +2,7 @@
   "scripts": {
     "start": "concurrently \"npm run start:react\" \"npm run start:electron\"",
     "start:react": "cd frontend && npm start",
-    "start:electron": "wait-on http://localhost:3000 && electron .",
+    "start:electron": "wait-on http://localhost:9195 && electron .",
     "build": "cd frontend && npm run build && cd .. && electron-builder",
     "package": "electron-packager . PeekAPI --platform=win32 --arch=x64 --out=dist --overwrite"
   },

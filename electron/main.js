@@ -25,7 +25,7 @@ app.whenReady().then(() => {
   const isDev = !app.isPackaged; // Check if running in dev mode
 
   const startUrl = isDev
-    ? "http://localhost:3000"
+    ? "http://localhost:9195"
     : `file://${path.join(__dirname, "../frontend", "build", "index.html")}`;
 
   mainWindow.loadURL(startUrl);

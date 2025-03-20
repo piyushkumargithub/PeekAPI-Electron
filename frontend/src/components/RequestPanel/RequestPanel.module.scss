@@ -5,9 +5,8 @@
     background: #2b2b2b;
     border-radius: 8px;
     color: white;
-    width: 600px;
+    width: 100%;
     max-width: 100%;
-    margin: auto;
   }
   
   .topSection {
@@ -22,6 +21,7 @@
     border-radius: 5px;
     background: #444;
     color: white;
+    min-width: 100px;
   }
   
   .urlInput {
@@ -40,6 +40,12 @@
     background: #1db954;
     color: white;
     cursor: pointer;
+    min-width: 80px;
+
+    &:disabled {
+      background: #666;
+      cursor: not-allowed;
+    }
   }
   
   .tabs {
